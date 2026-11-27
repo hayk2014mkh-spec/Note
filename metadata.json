@@ -1,0 +1,6 @@
+{
+  "name": "BookNote",
+  "description": "A cozy, aesthetic notebook & sticker journaling game where you pick custom spiral notebooks, decorate pages with die-cut stickers, write in Armenian, English, Russian, Hindi, and more, and save everything in your account.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

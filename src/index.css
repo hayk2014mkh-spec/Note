@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Fredoka', 'Noto Sans Armenian', 'Noto Sans Devanagari', 'Noto Sans JP', 'Noto Sans KR', system-ui, sans-serif;
+    --font-body: 'Nunito', 'Noto Sans Armenian', 'Noto Sans Devanagari', 'Noto Sans JP', 'Noto Sans KR', system-ui, sans-serif;
+    --font-hand: 'Caveat', 'Noto Sans Armenian', 'Noto Sans Devanagari', 'Nunito', cursive, sans-serif;
+    --font-serif: 'Lora', 'Noto Sans Armenian', 'Noto Sans Devanagari', Georgia, serif;
+  }
+
+  html, body {
+    font-family: var(--font-body);
+    color: #2c2142;
+    background-color: #c8b4e3;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-hand {
+  font-family: var(--font-hand);
+}
+
+.font-editorial {
+  font-family: var(--font-serif);
+}
+
+/* Cozy lavender gingham background matching the BookNote design */
+.bg-booknote-gingham {
+  background-color: #cdb9e8;
+  background-image:
+    linear-gradient(90deg, rgba(167, 139, 214, 0.24) 50%, transparent 50%),
+    linear-gradient(rgba(167, 139, 214, 0.24) 50%, transparent 50%);
+  background-size: 72px 72px;
+}
+
+/* Paper patterns for inside the notebook */
+.paper-lined {
+  background-color: #fffdf8;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 31px,
+    rgba(155, 135, 195, 0.24) 31px,
+    rgba(155, 135, 195, 0.24) 32px
+  );
+  background-position: 0 18px;
+}
+
+.paper-dotted {
+  background-color: #fffdf9;
+  background-image: radial-gradient(rgba(145, 120, 190, 0.34) 1.3px, transparent 1.3px);
+  background-size: 22px 22px;
+}
+
+.paper-grid {
+  background-color: #fcfaff;
+  background-image:
+    linear-gradient(to right, rgba(165, 140, 210, 0.18) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(165, 140, 210, 0.18) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.paper-lavender {
+  background-color: #f7f2ff;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 31px,
+    rgba(139, 108, 195, 0.2) 31px,
+    rgba(139, 108, 195, 0.2) 32px
+  );
+  background-position: 0 18px;
+}
+
+.paper-blush {
+  background-color: #fff6f9;
+  background-image: radial-gradient(rgba(219, 128, 165, 0.25) 1.3px, transparent 1.3px);
+  background-size: 22px 22px;
+}
+
+/* Glossy game button shadow matching BookNote mockup */
+.btn-game-purple {
+  background: linear-gradient(180deg, #9d7ad8 0%, #6f4ea8 100%);
+  box-shadow:
+    0 4px 0 #4d327d,
+    0 8px 18px rgba(61, 35, 107, 0.35),
+    inset 0 2px 2px rgba(255, 255, 255, 0.38);
+  border: 2.5px solid #ffffff;
+}
+
+.btn-game-purple:hover:not(:disabled) {
+  background: linear-gradient(180deg, #aa88e4 0%, #7a58b5 100%);
+  transform: translateY(-1px);
+}
+
+.btn-game-purple:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow:
+    0 2px 0 #4d327d,
+    0 4px 10px rgba(61, 35, 107, 0.3),
+    inset 0 2px 2px rgba(255, 255, 255, 0.3);
+}
+
+/* Custom cozy scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(154, 128, 200, 0.14);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(124, 93, 180, 0.45);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(108, 76, 166, 0.7);
+}
